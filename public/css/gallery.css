@@ -1,0 +1,53 @@
+figure {
+    margin: 0 0 0 4px;
+    text-align: left;
+    position: relative;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px;
+    padding-bottom: 1em;
+    background: rgba(52, 27, 43, 0.5);
+    width: 100%;
+    color: #eee;
+    text-align: center;
+}
+
+figcaption h3 {
+    margin: 3px 0;
+    padding: 0;
+    color: #fff;
+}
+
+figcaption h3:before {
+    content: 'I ♥ ';
+}
+
+figcaption a {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    border: 1px solid #FFD18F;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+    background: rgb(52, 27, 43);
+    color: #fff;
+}
+
+figcaption a:hover {
+    outline: 2px solid #9E8463;
+    outline-offset: 5px;
+}
+
+div figure {
+    overflow: hidden;
+}
