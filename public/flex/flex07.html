@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hello, flex!</title>
+	
+    
+    <style>
+            body{
+                margin: 0%;
+                padding: 0%;
+              }
+              .text-center{
+                  text-align: center;
+                }
+              
+              .flex-container {
+                  padding: 0;
+                  margin: 0 12px;
+                  /* Сначала создадим flex-контекст */
+                  display: flex;
+                }
+                .flex-item {
+                    background: tomato;
+                    padding: 10px 5px;
+                    width: 240px;
+                    height: 180px;
+                }
+                .flex-item img{
+                  max-width: 100%;
+                }
+        .flex-container {
+
+            /*  определим направление потока и хотим ли мы, чтобы элементы
+                переносились на новую строку
+            */
+            flex-flow: row wrap;
+            /* Теперь определим, как будет распределяться пространство */
+            justify-content: space-around;
+        }
+        
+        .nav-menu {
+            background:url(images/overlay.png) rgb(52, 27, 43);
+            list-style: none;
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+
+        }
+
+        .nav-item a {
+            color: #FFF;
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .nav-item a:hover,
+        .nav-item a:focus {
+            color: #fed136;
+            background: rgba(188, 202, 206, 0.15);;
+        }
+
+        @media (max-width: 767px) {
+            .nav-menu {
+                flex-flow: column wrap;
+                justify-content: space-around;
+                padding: 0;
+            }
+
+            .nav-item a {
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                text-align: center;
+            }
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="text-center">Flex justify-content</h1>
+
+    <div class="flex-container">
+            <span class="flex-item"><img src="../images/cat1.jpg"></span>
+            <span class="flex-item"><img src="../images/cat2.jpg"></span>
+            <span class="flex-item"><img src="../images/cat3.jpg"></span>
+            <span class="flex-item"><img src="../images/cat4.jpg"></span>
+            <span class="flex-item"><img src="../images/cat5.jpg"></span>
+    </div>
+
+  <!-- start section footer -->
+  <footer id="footer" class="footer text-center">
+    <span class="text-muted">&copy; Copyrights Red Cats. All rights reserved.</span>
+  </footer>
+
+  <!-- End section footer -->
+
+  </body>
+</html>
