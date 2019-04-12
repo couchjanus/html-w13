@@ -1,0 +1,118 @@
+.pricing-section .section-header {
+  color: #444;
+}
+
+.pricing-tables {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.pricing-tables .pricing-table {
+  background: #f6f6f6;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  border: 1px solid #f1f1f1;
+}
+
+.pricing-tables .pricing-table:hover {
+  z-index: 2;
+  top: -3px;
+}
+
+.pricing-tables .highlight-plan {
+  margin: -15px 0;
+  margin-right: -1px;
+  z-index: 1;
+  background: #f6f6f6;
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-name {
+  padding: 25px 0;
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-name h3 {
+  color: #fff;
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-signup {
+  padding: 30px 0;
+  background: #3498db;
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-signup .btn-system.border-btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.pricing-table .color-1 {
+  background: #00bac7;
+}
+
+.pricing-table .color-2 {
+  background: #3498db;
+}
+
+.pricing-table .color-3 {
+  background: #e8003e;
+}
+
+.pricing-table .plan-name {
+  padding: 25px 0;
+}
+
+.pricing-table .plan-name h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pricing-table .plan-price {
+  padding: 25px 0;
+}
+
+.pricing-table .plan-price .price-value {
+  font-size: 50px;
+  line-height: 76px;
+  font-weight: 700;
+  color: #333;
+}
+
+.pricing-table .plan-price .price-value span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.pricing-table .plan-price .interval {
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pricing-table .plan-list li {
+  padding: 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-table .plan-list li:first-child {
+  border-top: 1px solid #eee;
+}
+
+.pricing-table .plan-signup {
+  padding: 25px 0;
+}
+
+.pricing-table .plan-signup a {
+  text-transform: uppercase;
+}
